@@ -21,13 +21,11 @@ header {
     background: $primary-gradient;
     padding: 2rem;
 
-
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.6rem;
-
 
         .linha {
             border-top: 1px solid black;
@@ -38,12 +36,10 @@ header {
             display: inline-flex;
             gap: 2rem;
 
-
             li {
                 list-style-type: none;
             }
 
-            
             a {
                 text-decoration: none;
                 color: $dark-purple;
@@ -52,4 +48,48 @@ header {
             }
         }
     }
+    #home {
+        max-width: 1040px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .textos-home {
+            max-width: 464px;
+
+            h1 {
+                font-size: 42px;
+                color: $dark-purple;
+                margin-bottom: 2rem;
+                font-family: $font-title;
+
+                span {
+                    color: $vib-purple;
+                }
+            }
+
+            .btn-main {
+                border-radius: 2rem;
+                padding: 1rem;
+                width: 20rem;
+                background-color: $vib-purple;
+                color: #FFFFFF;
+                font-family: $font-text;
+                font-weight: 500;
+                font-size: 22px;
+                border: none;
+            }
+        }
+
+        .img-home {
+            max-width: 474px;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
 }
