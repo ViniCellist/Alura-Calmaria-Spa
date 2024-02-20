@@ -1,3 +1,6 @@
+/*VARS*/
+/*Colors*/
+/*FONTS*/
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +8,7 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  background: linear-gradient(180deg, #E8F5C8, #FFFFFF);
   padding: 2rem;
 }
 header nav {
@@ -27,7 +30,7 @@ header nav ul li {
 }
 header nav ul a {
   text-decoration: none;
-  color: rgb(12, 4, 33);
+  color: #0C0421;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=style.css.map */
