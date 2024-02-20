@@ -30,14 +30,15 @@ header nav ul li {
 }
 header nav ul a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   color: #0C0421;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
 }
 header #home {
   max-width: 1040px;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,23 +47,23 @@ header #home .textos-home {
   max-width: 464px;
 }
 header #home .textos-home h1 {
+  font-family: "Krona One", sans-serif;
   font-size: 42px;
   color: #0C0421;
   margin-bottom: 2rem;
-  font-family: "Krona One", sans-serif;
 }
 header #home .textos-home h1 span {
   color: #4E75FF;
 }
 header #home .textos-home .btn-main {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
   border-radius: 2rem;
   padding: 1rem;
   width: 20rem;
   background-color: #4E75FF;
-  color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 22px;
   border: none;
 }
 header #home .img-home {
@@ -70,4 +71,9 @@ header #home .img-home {
 }
 header #home .img-home img {
   width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
