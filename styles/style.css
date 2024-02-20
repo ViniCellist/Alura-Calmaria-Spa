@@ -1,12 +1,12 @@
-/*VARS*/
-/*Colors*/
-/*FONTS*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*VARS*/
+/*Colors*/
+/*FONTS*/
 header {
   background: linear-gradient(180deg, #E8F5C8, #FFFFFF);
   padding: 2rem;
