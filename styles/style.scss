@@ -1,3 +1,16 @@
+/*VARS*/ 
+    /*Colors*/
+    $dark-purple: #0C0421;
+    $vib-purple: #4E75FF;
+    $calm-purple: #85A0FF;
+    $purple: #CAD4FA;
+    $calm-green: #E8F5C8;
+    $primary-gradient: linear-gradient(180deg, #E8F5C8, #FFFFFF);
+    $secundary-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+    /*FONTS*/
+    $font-text: 'Montserrat', sans-serif;
+    $font-title: 'Krona One', sans-serif;
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +18,7 @@ body {
 }
 
 header {
-    background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+    background: $primary-gradient;
     padding: 2rem;
 
 
@@ -33,9 +46,9 @@ header {
             
             a {
                 text-decoration: none;
-                color: rgba(12, 4, 33, 1);
+                color: $dark-purple;
                 font-weight: 500;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-text;
             }
         }
     }
