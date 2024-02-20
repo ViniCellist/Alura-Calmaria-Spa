@@ -1,4 +1,5 @@
 @use '../abstract/vars';
+@use '../abstract/mixins';
 
 header {
     background: vars.$primary-gradient;
@@ -25,16 +26,14 @@ header {
 
             a {
                 text-decoration: none;
-                color: vars.$dark-purple;
+                @include mixins.ff-fs-color(vars.$font-text, 1rem, vars.$dark-purple);
                 font-weight: 500;
-                font-family: vars.$font-text;
             }
         }
     }
     #home {
         max-width: 1040px;
-        width: 80%;
-        margin: 0 auto;
+        @include mixins.margem-central(80%);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -43,10 +42,8 @@ header {
             max-width: 464px;
 
             h1 {
-                font-size: 42px;
-                color: vars.$dark-purple;
+                @include mixins.ff-fs-color(vars.$font-title, 42px, vars.$dark-purple);
                 margin-bottom: 2rem;
-                font-family: vars.$font-title;
 
                 span {
                     color: vars.$vib-purple;
@@ -54,14 +51,12 @@ header {
             }
 
             .btn-main {
+                @include mixins.ff-fs-color(vars.$font-text, 22px, #FFFFFF);
                 border-radius: 2rem;
                 padding: 1rem;
                 width: 20rem;
                 background-color: vars.$vib-purple;
-                color: #FFFFFF;
-                font-family: vars.$font-text;
                 font-weight: 500;
-                font-size: 22px;
                 border: none;
             }
         }
