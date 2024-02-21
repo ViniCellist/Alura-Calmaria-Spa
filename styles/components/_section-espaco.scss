@@ -1,3 +1,4 @@
+@use '../abstract/vars';
 @use '../abstract/mixins';
 
 #nosso-espaco {
@@ -9,6 +10,7 @@
         align-items: center;
         justify-content: space-around;
         gap: 2rem;
+        padding: 2rem 0;
 
         .imgs-espaco {
             max-width: 500px;
@@ -17,9 +19,21 @@
         .espaco-textos {
             @extend .imgs-espaco;
 
+            .titulo {
+                @include mixins.ff-fs-color(vars.$font-title, 1.8rem, vars.$vib-purple);
+                font-weight: 500;
+            }
+
+            .infos {
+                @include mixins.ff-fs-color(vars.$font-text, 1.2rem, vars.$dark-purple);
+            }
+
             .separador {
                 width: 100%;
             }
+        }
+        &:nth-child(2) {
+            flex-direction: row-reverse;
         }
     }
 }
