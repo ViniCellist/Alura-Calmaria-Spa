@@ -1,0 +1,29 @@
+@use '../abstract/vars';
+@use '../abstract/mixins';
+
+#servico {
+    background: vars.$primary-gradient;
+    padding: 5rem 0;
+
+    .cards {
+        @include mixins.margem-central(80%);
+        display: flex;
+        gap: 1.5rem;
+
+        .card {
+            background: vars.$secundary-gradient;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 3rem;
+
+            .card-titulo {
+                @include mixins.ff-fs-color(vars.$font-title, 1.6rem, vars.$dark-purple);
+            }
+
+            .card-texto {
+                @include mixins.ff-fs-color(vars.$font-text, 1.2rem, vars.$dark-purple);
+            }
+        }
+    }
+}
