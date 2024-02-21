@@ -29,6 +29,10 @@ header {
                 @include mixins.ff-fs-color(vars.$font-text, 1rem, vars.$dark-purple);
                 font-weight: 500;
             }
+
+            a:hover {
+                font-weight: bolder;
+            }
         }
     }
     #home {
@@ -55,9 +59,15 @@ header {
                 border-radius: 2rem;
                 padding: 1rem;
                 width: 20rem;
-                background-color: vars.$vib-purple;
+                background-color: vars.$purple;
                 font-weight: 500;
                 border: none;
+                transition: 0.5s;
+            }
+
+            .btn-main:hover {
+                background-color: vars.$vib-purple;
+                transition: 0.5s;
             }
         }
 
