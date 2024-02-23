@@ -1,0 +1,15 @@
+@use '../abstract/vars';
+@use '../abstract/mixins';
+
+footer {
+    background: vars.$calm-green;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    @include mixins.ff-fs-color(vars.$font-text, 1rem, vars.$dark-purple);
+}
+    
+    
+    
+    
+    
